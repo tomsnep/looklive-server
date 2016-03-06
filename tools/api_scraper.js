@@ -58,7 +58,7 @@ function scrapeProduct(id) {
 function doRequest(endpoint, callback) {
     http.get({
         'host': 'www.looklive.com',
-        'path': '/api/v3/'+endpoint+'/',
+        'path': '/api/v3/'+endpoint+'/?limit=100',
         'headers': {
             'Authorization': 'Bearer '+apiKey
         }
