@@ -36,21 +36,23 @@ header {
     margin: 0;
 }
 
-li {
+nav li {
     display: inline-block;
     height: 100%;
     list-style: none;
-    line-height: 30px;
     margin: 0;
-    margin-right: 15px;
+    line-height: 2em;
+    margin-right: 1.5em;
+    width: 75px;
 }
 
-li a {
+nav li a {
     color: white;
     text-decoration: none;
+    padding-left: 1.8em;
 }
 
-li a:hover {
+nav li a:hover {
     color: #d84a4a;
 }
 
@@ -61,9 +63,52 @@ li a:hover {
     top: 2px;
 }
 
+.menu-sprite {
+   background-image: url("../images/spritesheet.png");
+   background-repeat: no-repeat;
+   display: block;
+}
+
+.brands {
+   width: 31px;
+   height: 25px;
+   background-position: -5px -5px;
+}
+
+.home {
+   width: 29px;
+   height: 25px;
+   background-position: -46px -5px;
+}
+
+.latest {
+   width: 24px;
+   height: 26px;
+   background-position: -5px -40px;
+}
+
+.music {
+   width: 25px;
+   height: 25px;
+   background-position: -39px -40px;
+}
+
+.people {
+   width: 28px;
+   height: 25px;
+   background-position: -85px -5px;
+}
+
+.shows {
+   width: 31px;
+   height: 25px;
+   background-position: -74px -40px;
+}
+
 .header-img {
     width: 100%;
 }
+
 
 
 /* main */
