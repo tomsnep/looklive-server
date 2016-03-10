@@ -42,3 +42,12 @@ appearance id.
 product id.
 
 The API returns JSON (for now).
+
+#Performance
+
+## Semantic & efficient HTML
+### Before
+### After
+## Optimised CSS
+### Before
+### After
