@@ -44,16 +44,11 @@ product id.
 The API returns JSON (for now).
 
 #Performance
-
-## Semantic & efficient HTML / Optimised CSS
-### Before
+##start state
 ![Before](/readme_images/before.png)
-### After
+## Semantic & efficient HTML / Optimised CSS
 ![After semantic html](/readme_images/after_html-css.png)
 ## Added spritesheet instead of png icons
 ![After spritesheet](/readme_images/after_spritesheet.png)
 ## Replaced jquery and made webapp one page 
 ![After onepage](/readme_images/after_onepage.png)
-
-### Before
-### After
