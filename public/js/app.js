@@ -78,10 +78,6 @@
     function ready() {
         init();
 
-        if (window.location.pathname === '/') {
-            feed();
-        }
-
         // Credit: Robert van Steen
         if (/appearance/.test(window.location.href)) {
             appearance();

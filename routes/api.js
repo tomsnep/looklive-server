@@ -3,7 +3,6 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/feed', function(req, res, next) {
-//    sendFile('feed.json', res);
     fs.readFile('resources/feed.json', 'utf8', function(err, data) {
         if(err) {
             res.status(404);
@@ -15,7 +14,6 @@ router.get('/feed', function(req, res, next) {
 });
 
 router.get('/appearance/:uuid', function(req, res, next) {
-//    sendFile('appearance/'+req.params.uuid+'.json', res);
     fs.readFile('resources/appearance/'+req.params.uuid+'.json', 'utf8', function(err, data) {
         if(err) {
             res.status(404);
@@ -32,7 +30,7 @@ router.get('/appearance/:uuid', function(req, res, next) {
 
         console.log(products);
 
-        res.render('appearance', { title: item.title, item: item , products: products, layout: false });
+        res.render('appearance', { title: item.title, item: item , products: products, layout: false});
     })
 });
 
