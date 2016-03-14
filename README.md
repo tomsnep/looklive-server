@@ -47,46 +47,46 @@ The API returns JSON (for now).
 #Performance
 
 #### Settings
-*Browser: Chrome
-*Throtteling: none
-*Cache: Disabled
-*Extensions: Disabled 
+* Browser: Chrome
+* Throtteling: none
+* Cache: Disabled
+* Extensions: Disabled 
 
 #### List of improvements:
-*Semantic & Efficient HTML
-*Optimised CSS
-*Spritesheet
-*Vanilla JS
+* Semantic & Efficient HTML
+* Optimised CSS
+* Spritesheet
+* Vanilla JS
 
 ####start state
 
 
-DOM: 0.87s
-First Paint: 1.25s
-Load event: 3s
+DOM: 0.87s  
+First Paint: 1.25s  
+Load event: 3s  
 
 ![Before](/readme_images/before.png)
 
 #### Semantic & efficient HTML / Optimised CSS
 
-DOM: 0.37s
-First Paint: 0.54s
-Load event: 1.81s
+DOM: 0.37s  
+First Paint: 0.54s  
+Load event: 1.81s  
 
 ![After semantic html](/readme_images/after_html-css.png)
 
 #### Added spritesheet instead of png icons
 
-DOM: 0.32s
-First Paint: 0.51s
-Load event: 1.80s
+DOM: 0.32s  
+First Paint: 0.51s  
+Load event: 1.80s  
 
 ![After spritesheet](/readme_images/after_spritesheet.png)
 
 #### Replaced jquery and made webapp one page 
 
-DOM: 0.22s
-First Paint: 0.25s
-Load event: 0.86s
+DOM: 0.22s  
+First Paint: 0.25s  
+Load event: 0.86s  
 
 ![After onepage](/readme_images/after_onepage.png)
