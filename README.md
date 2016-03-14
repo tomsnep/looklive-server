@@ -79,7 +79,7 @@ Load event: 1.81s
 
 DOM: 0.32s  
 First Paint: 0.51s  
-Load event: 1.80s  
+Load event: 1.75s  
 
 ![After spritesheet](/readme_images/after_spritesheet.png)
 
