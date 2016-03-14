@@ -58,7 +58,7 @@ The API returns JSON (for now).
 * Spritesheet
 * Vanilla JS
 
-####start state
+#### Start state
 
 
 DOM: 0.87s  
