@@ -1,65 +1,23 @@
-##Jake Archibald on Performance & Service Worker
+## Service Worker (SW) performance Test LookLive server
 
-#####Don't rely on javascript for al the rendering
-add async to the script tag:
-```
-<script src="app.js" async></script>
-```
-#####Render only the styles needed for the first render
+####Without SW
+DOMContentLoaded: 0.778s    
+First Paint: 0.994s  
+Load event: 2.19s  
+![Without SW](/readme_images/before.png)
 
-[use loadCSS](https://github.com/filamentgroup/loadCSS) 
-```
-<script>
-	function loadCSS() { ... }
-	function onloadCSS() { ... }
-</script>
-<main class="article" style="display:none">
-	<script>
-		onloadCSS(loadCSS('style.css'), function() {
-			document.querySelector('.article').style.display = '';
-		});
-	</script>
-	<noscript>
-		<link rel="stylesheet" href="style.css">
-	</noscript>
-</main>
+####With SW
+DOMContentLoaded: 0.769s    
+First Paint: 1.06s  
+Load event: 2.52s
+![Without SW](/readme_images/after.png)
 
-##### Use a service worker
-##### Using Stream service api 
-##### Add "read offline" button for the user
+####Conclusion
 
+Without the service worker the page renders faster. 
+DOMContentLoaded: 0.009s slower  
+First Paint: 0.066s faster  
+Load event: 0.33s faster
 
-
-
-#Performance test
-#### Settings
-Browser: Chrome Canary
-
-
-#### start state 
-
-DOM: 0.264s  
-First Paint: 0.314s  
-Load event: 1.71s  
-
-![start state](readme_images/start_state.png);
-
-#### Added caching files
-
-Files cached:
-* index.html
-* app.js
-* style.css
-* logo.png
-* spritesheet.png
-![cached files](readme_images/cached_files.png);
-
-DOM: 0.350s  
-First Paint: 0.482s  
-Load event: 0.795s  
-
-![cached files result](readme_images/cached_files_result.png);
-
-
-
-
+The LookLive server without SW was tested on localhost.  
+The LookLive server with SW was tested on [https://webdevelopment.work3gether.com](https://webdevelopment.work3gether.com).
