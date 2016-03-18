@@ -14,7 +14,7 @@ Load event: 2.52s
 
 ####Conclusion
 
-Without the service worker the page renders faster. 
+Without the service worker the page renders faster.   
 DOMContentLoaded: 0.009s slower  
 First Paint: 0.066s faster  
 Load event: 0.33s faster
