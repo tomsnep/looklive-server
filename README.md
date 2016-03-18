@@ -14,10 +14,10 @@ Load event: 2.52s
 
 ####Conclusion
 
-Without the service worker the page renders faster.   
-DOMContentLoaded: 0.009s slower  
-First Paint: 0.066s faster  
-Load event: 0.33s faster
+With the service worker the page renders a little bit slower.     
+DOMContentLoaded: 0.009s faster  
+First Paint: 0.066s slower  
+Load event: 0.33s slower
 
 The LookLive server without SW was tested on localhost.  
 The LookLive server with SW was tested on [https://webdevelopment.work3gether.com](https://webdevelopment.work3gether.com).
