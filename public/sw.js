@@ -11,3 +11,5 @@ this.addEventListener('install', event => {
 		})
 	);
 });
+
+console.log(test);
