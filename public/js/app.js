@@ -21,7 +21,6 @@
                 loadPage(url);
             });
         });
-
         window.addEventListener('popstate', function(event) {
             var url = '/api' + window.location.pathname;
 
@@ -37,8 +36,10 @@
         var wrapper = document.querySelector('main');
 
         fetch(url)
-            .then(response => response.text())
-            .then(text => {
+            .then(function(response){
+                return response.text()
+            })
+            .then(function(text){
                 wrapper.innerHTML = text;
                 ready();
             });
@@ -74,7 +75,7 @@
             });
         });
     }
-
+    
     function ready() {
         init();
 
@@ -83,6 +84,27 @@
             appearance();
         }
     }
+
+    // Service Worker
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js', { scope: './'})
+            .then(function(reg){ console.info('registered sw', reg)})
+            .catch(function(err){ console.error('error registering sw', err)})
+    } else {
+      console.log('ServiceWorker is not supported');
+    }
+
+    //Font face observer
+    var observer = new FontFaceObserver('Raleway');
+
+    observer.check()
+        .then(function (reg) {
+            console.log('Raleway is detected')
+            document.body.className += " fonts-loaded";
+        })
+        .catch(function(err) {
+            console.log('font is not detected')
+        });
 
     document.addEventListener('DOMContentLoaded', function() {
         ready();

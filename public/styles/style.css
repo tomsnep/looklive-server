@@ -1,8 +1,16 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway-Medium.ttf');
+}
 /* general */
 body {
-    font: 14px Raleway, Helvetica, Arial, sans-serif;
+    font: 14px Helvetica, Arial, sans-serif;
     background-color: #f1f1f1;
     margin: 0;
+}
+
+.fonts-loaded {
+    font-family: 'Raleway', sans-serif;
 }
 
 body a {
@@ -64,7 +72,7 @@ nav li a:hover {
 }
 
 .menu-sprite {
-   background-image: url("../images/spritesheet.png");
+   background-image: url("/dist/img/spritesheet.png");
    background-repeat: no-repeat;
    display: inline-block;
 }
