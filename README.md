@@ -26,18 +26,25 @@ The LookLive server with SW was tested on [https://webdevelopment.work3gether.co
 
 ##Progressive Web Apps
 
-A Progressive Web App uses modern web capabilities to deliver an app-like user experience. They evolve from pages in browser tabs to immersive, top-level apps, leveraging the web's low friction.
+>A Progressive Web App uses modern web capabilities to deliver an app-like user experience. 
+>They evolve from pages in browser tabs to immersive, top-level apps, leveraging the web's low friction.
+*Google Developers*
 
-These apps aren’t packaged and deployed through stores, they’re just websites that took all the right vitamins. They keep the web’s ask-when-you-need-it permission model and add in new capabilities like being top-level in your task switcher, on your home screen, and in your notification tray. Users don’t have to make a heavyweight choice up-front and don’t implicitly sign up for something dangerous just by clicking on a link. Sites that want to send you notifications or be on your home screen have to earn that right over time as you use them more and more. They progressively become “apps”.
+A Progressive Web App (PWA) is a combination between a native app and a webapp. PWA's can be added to the homescreen, so a user can open the PWA like a native app. The more the user visits the url, the more functionality it will get. PWA's use Service Workers therefore PWA's can be used offline. Also developers can send push notifications to the user, just like a native app! 
+
+But there is more! A PWA is:  
+* Progressive - Usable for all kind of users  
+* Responsive - Usable by all kinds of devices
+* Connectivity Independent - Can be used offline (if(ServiceWorker == true))
+* App like - Feels like a native app
+* Safe - Served over HTTPS
+* Up to date - updates automatically, no need to download an update
+* Discoverable - Search engines can find PWA's by 
+* Linkable - Easy to share with a URL
 
 ![Example of a Progressive Web App](/readme_images/progressive_webapp.gif)
 
-An example of a Progressive Web App
-
-1. The site begins life as a regular tab. It doesn’t have super-powers, but it is built using Progressive App features including TLS, Service Workers, Manifests, and Responsive Design.
-2. The second (or third or fourth) time one visits the site — roughly at the point where the browser it sure it’s something you use frequently — a prompt is shown by the browser (populated from the Manifest details)
-3. Users can decide to keep apps to the home screen or app launcher
-4. When launched from the home screen, these apps blend into their environment; they’re top-level, full-screen, and work offline. Of course, they worked offline after step 1, but now the implicit contract of “appyness” makes that clear.
+Above is a example of a web app
 
 sources:
 [https://developers.google.com/web/progressive-web-apps#getstarted](https://developers.google.com/web/progressive-web-apps#getstarted)  
