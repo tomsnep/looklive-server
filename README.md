@@ -27,8 +27,8 @@ The LookLive server with SW was tested on [https://webdevelopment.work3gether.co
 ##Progressive Web Apps
 
 >A Progressive Web App uses modern web capabilities to deliver an app-like user experience. 
->They evolve from pages in browser tabs to immersive, top-level apps, leveraging the web's low friction.
-*Google Developers*
+>They evolve from pages in browser tabs to immersive, top-level apps, leveraging the web's low friction.  
+*-Google Developers*
 
 A Progressive Web App (PWA) is a combination between a native app and a webapp. PWA's can be added to the homescreen, so a user can open the PWA like a native app. The more the user visits the url, the more functionality it will get. PWA's use Service Workers therefore PWA's can be used offline. Also developers can send push notifications to the user, just like a native app! 
 
