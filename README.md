@@ -96,7 +96,7 @@ sources:
 
 ## Optimizing HTTP requests with Gulp
 ###Start state
-![start state](reamde_img/start_state.png)
+![start state](readme_img/start_state.png)
 DOM: 0.681s  
 First Paint: 1.01s  
 Load event: 2.10s  
