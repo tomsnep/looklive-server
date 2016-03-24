@@ -124,3 +124,35 @@ DOM: 0.49s slower
 First Paint: 0.07s faster  
 Load event: 0.29s faster  
 
+##Overal conclusion
+
+With all the performance adjustments the looklive website has significant faster load time then before. Some adjustments didn't have much influence on the performance. An example of this was the Service Worker, the page rendered 0.33s slower than without the SW. After rewriting the HTML/CSS/JS and removing jQuery the page had a Load event time of 0.86s. After implementing the SW the Load event was 2.52!!!. But the test results are not completely reliable in my opinion. The Timeline tool of Chrome gives sometimes highly variable results.
+
+######Start state  
+DOM: 0.87s   
+First Paint: 1.25s   
+Load event: 3s
+
+######After first week adjustments (HTML/CSS/JS/IMG)  
+DOM: 0.22s   
+First Paint: 0.25s   
+Load event: 0.86s
+
+######After implementing Service Worker  
+DOM: 0.769s   
+First Paint: 1.06s   
+Load event: 2.52s
+
+######After Optimising HTTP requests  
+DOM: 0.867s   
+First Paint: 1.16s   
+Load event: 1.99s
+
+######Overal profit on performance
+DOM: 0s
+First Paint: 0.09s
+Load event: 1.01s
+
+![Digital Ocean Server](https://webdevelopment.work3gether.com/)
+
+

@@ -100,7 +100,7 @@
     observer.check()
         .then(function (reg) {
             console.log('Raleway is detected')
-            document.body.className += " fonts-loaded";
+            document.body.className += "fonts-loaded";
         })
         .catch(function(err) {
             console.log('font is not detected')
