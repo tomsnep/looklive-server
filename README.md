@@ -149,10 +149,11 @@ First Paint: 1.16s
 Load event: 1.99s
 
 ######Overal profit on performance
-DOM: 0s
-First Paint: 0.09s
-Load event: 1.01s
+DOM: 0s  
+First Paint: 0.09s  
+Load event: 1.01s  
 
+######Digital Ocean Server
 [Digital Ocean Server](https://webdevelopment.work3gether.com/)
 
 
