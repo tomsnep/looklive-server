@@ -153,6 +153,6 @@ DOM: 0s
 First Paint: 0.09s
 Load event: 1.01s
 
-![Digital Ocean Server](https://webdevelopment.work3gether.com/)
+[Digital Ocean Server](https://webdevelopment.work3gether.com/)
 
 
